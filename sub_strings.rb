@@ -1,16 +1,17 @@
 dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
-string = %(Howdy partner, sit down! How's it going? George's book is on the table. Rock 'n' roll folks! What does "ol'" mean in english? My neighbors' garden is greener than mine.)
-  
-def normalize_string(input_string)
-    
-    
-    
-end
+input_string = "Howdy partner, sit down! How's it going?"
 
-normalize_string(string)
+  def string_normalization(text)
+    cleaned_text = text.gsub(/['’]s|['’]t|['’]ve|['’]re|['’]ll|['’]d|[^\w\s]/, '').downcase
+  end
 
-def substrings(par1, par2)
+  string_normalization(input_string)
 
-end
+  clean_string = string_normalization(input_string)
+  puts clean_string
 
-substrings(arg1, arg2)
+  def substrings(word, dictionary)
+
+  end
+
+  substrings(clean_string, dictionary)
